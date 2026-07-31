@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>easy-JS-game</title>
-    <script type="module" src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <title>REFLEX EMPIRE</title>
+  <link rel="icon" href="images/reflex-empire.png" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="main-container">
-
-        <div class="stats-container">
-            <div class="menu-bar-container"><p class="menu-bar">STATS</p></div>
-            <div class="time-container">time: <span class="time">20</span></div>
-            <div class="scores-container">scores: <span class="scores">0</span></div>
-            <div class="scores-container">coins: <span class="coins">0</span></div>
-        </div>
-
-        <div class="play-ground">
-
-            <div class="match-stats-container">
-                <div class="exit">X</div>
-                <p class="text1"></p>
-                <p class="text2"></p>
-                <p class="text3"></p>
-            </div>
-
-            <img class="image-person" src="istockphoto-1088362888-612x612.jpg">
-
-        </div>
-
+  <div id="splash">
+    <div class="splash-content">
+      <div class="splash-logo">⚡</div>
+      <h1 class="splash-title">REFLEX EMPIRE</h1>
+      <div class="splash-subtitle">Neuro Operator Training</div>
+      <div class="splash-loader"><div class="splash-bar"></div></div>
     </div>
-    
+  </div>
+
+  <nav class="desktop-nav" id="desktopNav">
+    <button class="nav-btn" data-screen="home">🏠 Home</button>
+    <button class="nav-btn" data-screen="modes">🎮 Modes</button>
+    <button class="nav-btn" data-screen="shop">🛒 Shop</button>
+    <button class="nav-btn" data-screen="inventory">🎒 Loadout</button>
+    <button class="nav-btn" data-screen="profile">👤 Profile</button>
+    <button class="nav-btn" data-screen="settings">⚙️ Settings</button>
+  </nav>
+
+  <button class="burger-menu" id="burgerMenu"><span></span><span></span><span></span></button>
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <div class="mobile-nav-menu" id="mobileMenu">
+    <button class="nav-btn" data-screen="home">🏠 Home</button>
+    <button class="nav-btn" data-screen="modes">🎮 Modes</button>
+    <button class="nav-btn" data-screen="shop">🛒 Shop</button>
+    <button class="nav-btn" data-screen="inventory">🎒 Loadout</button>
+    <button class="nav-btn" data-screen="profile">👤 Profile</button>
+    <button class="nav-btn" data-screen="settings">⚙️ Settings</button>
+  </div>
+
+  <button class="music-toggle" id="musicToggle">🎵</button>
+
+  <div id="app">
+    <div id="screen-home" class="screen active"></div>
+    <div id="screen-modes" class="screen"></div>
+    <div id="screen-shop" class="screen"></div>
+    <div id="screen-inventory" class="screen"></div>
+    <div id="screen-profile" class="screen"></div>
+    <div id="screen-settings" class="screen"></div>
+    <div id="screen-game" class="screen"></div>
+    <div id="screen-results" class="screen"></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
 </body>
 </html>
