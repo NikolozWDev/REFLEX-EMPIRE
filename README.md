@@ -7,7 +7,7 @@ REFLEX EMPIRE provides a lightweight practice environment where players can deve
 ## Website
 
 **Play Online:**  
-https://nikolozwdev.github.io/simple-game/
+https://nikolozwdev.github.io/REFLEX-EMPIRE/
 
 ## About
 
